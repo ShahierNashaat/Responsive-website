@@ -1,0 +1,197 @@
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    text-decoration: none;
+    font-size: 1em;
+    color: rgba(255,255,255,.7);
+    display: block;
+    transition: 0.3s;
+    padding-left: 1%;
+    height: 50px;
+    border-bottom: 1px solid black;
+  }
+
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+  .sidebar a div{
+    top: 15%;
+    left: 10%;
+    position: relative;
+  }
+
+  .sidebar label {
+    text-decoration: none;
+    font-size: 1em;
+    color: #999;
+    display: block;
+    transition: 0.3s;
+    padding-left: 1%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    padding-top: 3%;
+    padding-left: 10%;
+    background-color: rgb(31, 30, 30);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+  }
+
+  #block-div{
+    transition: margin-left .5s;
+    cursor:pointer;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    /* .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;} */
+    .desktop-form{display: none;}
+  }
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: auto;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar{
+    justify-content: right;
+}
+
+#navbarToggleExternalContent{
+    border-color: #f8f9fa;
+}
+
+#navbarToggleExternalContent span{
+    color: #006fcc;
+}
+#username-dropdown{
+    /* position: relative;
+    left: 17%; */
+    display: inline;
+}
+
+#cart{
+    text-decoration: none;
+    position: relative;
+    
+    top: 7px;
+}
+
+#cart-username{
+    right: 0; 
+}
+
+#mobile-form{
+    display: none;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  color: #949494;
+}
+[class*="col-"]{position: unset;}
+
+.last-column-footer{
+  display: flex;
+  flex-direction: row;
+}
+
+#social li{
+  display: inline;
+  margin-right: 2%;
+}
+
+.add a{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+/* .last-column-footer p, .last-column-footer h6{
+  width: max-content;
+} */
+
+@media screen and (max-width: 1024px) {
+  .img-div{
+    padding-right: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+    #desktop-form{display: none;}
+    #mobile-form{
+      display: flex; 
+      justify-content: center;
+    }
+    .add a{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: max-content;
+    }
+    .img-div{
+      padding-right: 2%;
+    }
+    #demo{
+      padding-left: 0 !important;
+    }
+    #aside{
+      margin-top: 2%;
+    }
+    #cart-username{
+      position: absolute;
+    }
+    
+}
